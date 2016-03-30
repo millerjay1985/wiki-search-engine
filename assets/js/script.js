@@ -14,7 +14,7 @@ $(function(){
     
     searchArray.forEach(function(entry) {
     console.log(entry.title);
-    div.append('<a href="#">' + entry.title + '</a>');
+    div.append('<div><a href="#">' + entry.title + '</a></div>');
     });
 
   });
