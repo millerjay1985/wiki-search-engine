@@ -28,7 +28,7 @@ input[type="text"] {
   padding-right: 60px;
   padding-bottom: 8px;
   width: 0px;
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
   background: none;
