@@ -11,10 +11,14 @@ $(function(){
   }).done( function ( data ) {
     var searchArray = data.query.search;
     var div = $("#results");
+    var wiki = 'https://en.wikipedia.org/wiki/';
     
     searchArray.forEach(function(entry) {
     console.log(entry.title);
-    div.append('<div><a href="#">' + entry.title + '</a></div>');
+    
+    var title = entry.title.replace(" ", "");
+    
+    div.append('<div><a href="' + wiki.append(title) + '">' + entry.title + '</a></div>');
     });
 
   });
