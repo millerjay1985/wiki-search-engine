@@ -10,7 +10,7 @@ $(function(){
     dataType: 'jsonp'
   }).done( function ( data ) {
     var searchArray = data.query.search;
-    var div = document.getElementById("results");
+    var div = $("#results");
     
     searchArray.forEach(function(entry) {
     console.log(entry.title);
