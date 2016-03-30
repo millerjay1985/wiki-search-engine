@@ -1,7 +1,7 @@
 $(function(){
   
-  var string = "National Great Blacks In Wax Museum";
-  string = input.replace(" ", "+");
+  var str = "National Great Blacks In Wax Museum";
+  str = str.replace(" ", "+");
   
   wikiSearch(string);
   
