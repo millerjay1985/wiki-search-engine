@@ -12,7 +12,7 @@ $(function(){
     var searchArray = data.query.search;
     
     for (i = 0; i < searchArray.length; i++) { 
-    console.log(searchArray[i]);
+    console.log(searchArray[i].title);
     };
   });
   
