@@ -11,9 +11,10 @@ $(function(){
   }).done( function ( data ) {
     var searchArray = data.query.search;
     
-    for (i = 0; i < searchArray.length; i++) { 
-    console.log(searchArray[i].title);
-    };
+    searchArray.forEach(function(entry) {
+    console.log(entry.title);
+    });
+
   });
   
   // https://en.wikipedia.org/wiki/
