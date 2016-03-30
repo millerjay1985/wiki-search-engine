@@ -18,7 +18,7 @@ $(function(){
     
     var title = entry.title.replace(" ", "");
     
-    div.append('<div><a href="' + wiki.append(title) + '">' + entry.title + '</a></div>');
+    div.append('<div><a href="' + wiki + title + '">' + entry.title + '</a></div>');
     });
 
   });
