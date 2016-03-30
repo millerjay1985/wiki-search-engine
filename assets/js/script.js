@@ -10,7 +10,10 @@ $(function(){
     dataType: 'jsonp'
   }).done( function ( data ) {
     var searchArray = data.query.search;
-    console.log(searchArray[0].title);
+    
+    for (i = 0; i < searchArray.length; i++) { 
+    console.log(searchArray[i]);
+    };
   });
   
   // https://en.wikipedia.org/wiki/
