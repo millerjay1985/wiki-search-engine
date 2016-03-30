@@ -16,8 +16,8 @@ body {
 }
 
 input[type="text"] {
-  height: 60px;
-  font-size: 55px;
+  height: 40px;
+  font-size: 30px;
   display: inline-block;
   font-family: "Lato";
   font-weight: 100;
@@ -26,6 +26,7 @@ input[type="text"] {
   color: #555;
   padding: 3px;
   padding-right: 60px;
+  padding-bottom: 5px;
   width: 0px;
   position: absolute;
   top: 0;
