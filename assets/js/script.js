@@ -5,8 +5,6 @@ $(function(){
   
   // this funnction returns an array using the wiki API
   $.ajax({
-    //url: '//www.mediawiki.org/w/api.php?format=jsonty&action=query&meta=siteinfo&siprop=general&callback=?',
-    //url:'//www.mediawiki.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch=Albert+Einstein&callback=?',
     url:'https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch=' + input + '&callback=?',
     data: {format: 'json'},
     dataType: 'jsonp'
