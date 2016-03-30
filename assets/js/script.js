@@ -12,18 +12,18 @@ $(function(){
       data: {format: 'json'},
       dataType: 'jsonp'
     }).done( function ( data ) {
+      
       var searchArray = data.query.search;
       var div = $("#results");
       var wiki = 'https://en.wikipedia.org/wiki/';
       
       searchArray.forEach(function(entry) {
+        
+      var title = entry.title.replace(" ", "");  
       console.log(entry.title);
-      
-      var title = entry.title.replace(" ", "");
       
       div.append('<div><a href="' + wiki + title + '" target="_blank">' + entry.title + '</a></div>');
       });
-  
     });
   }
   // https://en.wikipedia.org/wiki/
