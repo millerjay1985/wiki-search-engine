@@ -3,7 +3,7 @@ $(function(){
   var str = "National Great Blacks In Wax Museum";
   str = str.replace(" ", "+");
   
-  wikiSearch(string);
+  wikiSearch(str);
   
   // this funnction returns an array using the wiki API
   function wikiSearch(input){
