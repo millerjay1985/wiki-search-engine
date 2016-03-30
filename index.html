@@ -28,15 +28,10 @@
       
       <h1>Wiki Search Engine</h1>
       
-      <div class="input">
-        <script>
-          function myFunction() {
-              var x = document.createElement("INPUT");
-              x.setAttribute("type", "search");
-              document.body.appendChild(x);
-          }
-        </script>
-      </div>
+      <form class="form-wrapper">
+          <input type="text" id="search" placeholder="Search for..." required>
+          <input type="submit" value="go" id="submit">
+      </form>
       
       <div id="results"></div>
       
