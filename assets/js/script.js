@@ -1,13 +1,22 @@
 $(function(){
   
   $.ajax({
-    url: '//www.wikidata.org/w/api.php',
-    data: { action: 'wbgetentities', ids: mw.config.get('wgWikibaseItemId'), format: 'json' },
-    dataType: 'jsonp',
-    success: function (x) {
-      console.log('wb label', x.entities.Q39246.labels.en.value);
-      console.log('wb description', x.entities.Q39246.descriptions.en.value);
-    }
-  });  
+    // request type ( GET or POST )
+	  type: "GET",
+        
+    // the URL to which the request is sent
+	  url: mw.util.wikiScript('api'),
+	  
+	  // data to be sent to the server
+	  data: { action:'query', format:'json', lgname:'foo', lgpassword:'foobar' },
+        
+    // The type of data that you're expecting back from the server
+	  dataType: 'json',
+        
+    // Function to be called if the request succeeds
+	  success: function( jsondata ){
+		  alert( jsondata.result );
+	  }
+  });
   
 });
