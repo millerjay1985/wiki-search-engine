@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
   
   $.ajax({
     url: '//www.wikidata.org/w/api.php',
