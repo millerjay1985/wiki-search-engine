@@ -1,7 +1,6 @@
 #searchinput {
     width: 200px;
 }
-
 #searchclear {
     position: absolute;
     right: 5px;
@@ -13,6 +12,7 @@
     cursor: pointer;
     color: #ccc;
 }
+
 
 .container{
   text-align:center;
