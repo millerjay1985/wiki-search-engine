@@ -9,7 +9,7 @@ $(function(){
     $("#searchinput").val('');
   });
   
-  $('.form-control').keydown(function() {
+  $('.form-control').keydown(function(e) {
     if (e.keyCode == 13) {
       var value = $(this).val();
       console.log(value)
