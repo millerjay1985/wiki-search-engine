@@ -5,6 +5,10 @@ $(function(){
   
   wikiSearch(str);
   
+  $("#searchclear").click(function(){
+    $("#searchinput").val('');
+  });
+  
   // this funnction returns an array using the wiki API
   function wikiSearch(input){
     $.ajax({
