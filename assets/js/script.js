@@ -1,10 +1,5 @@
 $(function(){
-  
-  var str = "National Great Blacks In Wax Museum";
-  str = str.replace(" ", "+");
-  
-  wikiSearch(str);
-  
+
   $("#searchclear").click(function(){
     $("#searchinput").val('');
   });
@@ -12,8 +7,10 @@ $(function(){
   $('.form-control').keydown(function(e) {
     if (e.keyCode == 13) {
       var value = $(this).val();
+      value = value.replace(" ", "+");
       console.log(value)
       $('#form').submit();
+      wikiSearch(value);
     }
    });
   
