@@ -28,12 +28,12 @@ $(function(){
       var searchArray = data.query.search;
       var wiki = 'https://en.wikipedia.org/wiki/';
       
+      div.empty();
+      
       searchArray.forEach(function(entry) {
         
       var title = entry.title.replace(" ", "");  
       console.log(entry.title);
-      
-      div.empty();
       
       div.append('<div><a href="' + wiki + title + '" target="_blank">' + entry.title + '</a></div>');
       });
