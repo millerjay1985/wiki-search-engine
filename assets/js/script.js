@@ -11,7 +11,7 @@ $(function(){
   
   $('.form-control').keydown(function() {
     var value = $(this).val();
-    conosole.log(value)    
+    console.log(value)    
    });
   
   // this funnction returns an array using the wiki API
