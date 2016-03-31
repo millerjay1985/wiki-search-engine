@@ -1,7 +1,10 @@
 $(function(){
+  
+  var div = $("#results");
 
   $("#searchclear").click(function(){
     $("#searchinput").val('');
+    div.empty();
   });
   
   $('.form-control').keydown(function(e) {
@@ -23,13 +26,14 @@ $(function(){
     }).done( function ( data ) {
       
       var searchArray = data.query.search;
-      var div = $("#results");
       var wiki = 'https://en.wikipedia.org/wiki/';
       
       searchArray.forEach(function(entry) {
         
       var title = entry.title.replace(" ", "");  
       console.log(entry.title);
+      
+      div.empty();
       
       div.append('<div><a href="' + wiki + title + '" target="_blank">' + entry.title + '</a></div>');
       });
