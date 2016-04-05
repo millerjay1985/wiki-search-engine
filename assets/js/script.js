@@ -8,10 +8,10 @@ $(function(){
   });
   
   $('.form-control').keydown(function(e) {
+    var value = $(this).val();
     if(value.length > 0){
       $("#searchclear").addClass("glyphicon-remove-circle");
       if (e.keyCode == 13) {
-        var value = $(this).val();
         value = value.replace(" ", "+");
         console.log(value)
         $('#form').submit();
