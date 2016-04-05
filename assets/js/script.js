@@ -12,7 +12,7 @@ $(function(){
     var value = $(this).val();
     console.log(value.length);
     console.log(value);
-    if(value != null){
+    if(value.length >= 0){
       $("#searchclear").addClass("glyphicon-remove-circle");
       if (e.keyCode == 13) {
         value = value.replace(" ", "+");
@@ -20,9 +20,6 @@ $(function(){
         $('#form').submit();
         wikiSearch(value);
       }
-    }
-    else if(value == null){
-      $("#searchclear").removeClass("glyphicon-remove-circle");
     }
    });
   
