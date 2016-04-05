@@ -15,7 +15,7 @@ $(function(){
     
     if(value == null){
       $('#searchclear').attr("class","");
-      console.log(null)
+      console.log('null');
     }
     else if(value != null){
       $('#searchclear').attr("class","glyphicon glyphicon-remove-circle");
