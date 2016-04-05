@@ -5,6 +5,7 @@ $(function(){
   $("#searchclear").click(function(){
     $("#searchinput").val('');
     div.empty();
+    $("#searchclear").removeClass("glyphicon-remove-circle");
   });
   
   $('.form-control').keydown(function(e) {
