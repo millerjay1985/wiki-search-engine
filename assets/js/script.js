@@ -21,7 +21,7 @@ $(function(){
         wikiSearch(value);
       }
     }
-    $("#searchclear").removeClass("glyphicon-remove-circle");
+    //$("#searchclear").removeClass("glyphicon-remove-circle");
    });
   
   // this funnction returns an array using the wiki API
