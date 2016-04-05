@@ -11,7 +11,7 @@ $(function(){
   $('.form-control').keydown(function(e) {
     var value = $(this).val();
     console.log(value.length);
-    console.log(value);
+    console.log(value + " ");
     
     if(!value){
       $('#searchclear').attr("class","");
