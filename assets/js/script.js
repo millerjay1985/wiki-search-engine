@@ -14,11 +14,11 @@ $(function(){
     console.log(value);
     
     if(value == null){
-      $("#searchclear").removeClass("glyphicon-remove-circle");
+      $('#searchclear').attr("class","");
+      console.log(null)
     }
-    
     else if(value != null){
-      $("#searchclear").addClass("glyphicon-remove-circle");
+      $('#searchclear').attr("class","glyphicon glyphicon-remove-circle");
       if (e.keyCode == 13) {
         value = value.replace(" ", "+");
         console.log(value)
