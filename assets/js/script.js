@@ -13,7 +13,7 @@ $(function(){
     console.log(value.length);
     console.log(value);
     
-    if(value == null){
+    if(!value){
       $('#searchclear').attr("class","");
       console.log("null");
     }
