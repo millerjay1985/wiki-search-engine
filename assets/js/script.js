@@ -9,7 +9,7 @@ $(function(){
   
   $('.form-control').keydown(function(e) {
     if(value.length > 0){
-      $("#searchclear").addClass("important");
+      $("#searchclear").addClass("glyphicon-remove-circle");
       if (e.keyCode == 13) {
         var value = $(this).val();
         value = value.replace(" ", "+");
@@ -17,7 +17,7 @@ $(function(){
         $('#form').submit();
         wikiSearch(value);
       }
-    }  
+    }
    });
   
   // this funnction returns an array using the wiki API
