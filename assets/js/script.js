@@ -5,11 +5,12 @@ $(function(){
   $("#searchclear").click(function(){
     $("#searchinput").val('');
     div.empty();
-    $("#searchclear").removeClass("glyphicon-remove-circle");
+    //$("#searchclear").removeClass("glyphicon-remove-circle");
   });
   
   $('.form-control').keydown(function(e) {
     var value = $(this).val();
+    console.log(value.length);
     if(value.length > 0){
       $("#searchclear").addClass("glyphicon-remove-circle");
       if (e.keyCode == 13) {
