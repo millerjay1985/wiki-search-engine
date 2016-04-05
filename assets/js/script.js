@@ -12,7 +12,12 @@ $(function(){
     var value = $(this).val();
     console.log(value.length);
     console.log(value);
-    if(value.length >= 0){
+    
+    if(value == null){
+      $("#searchclear").removeClass("glyphicon-remove-circle");
+    }
+    
+    else if(value != null){
       $("#searchclear").addClass("glyphicon-remove-circle");
       if (e.keyCode == 13) {
         value = value.replace(" ", "+");
