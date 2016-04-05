@@ -8,13 +8,16 @@ $(function(){
   });
   
   $('.form-control').keydown(function(e) {
-    if (e.keyCode == 13) {
-      var value = $(this).val();
-      value = value.replace(" ", "+");
-      console.log(value)
-      $('#form').submit();
-      wikiSearch(value);
-    }
+    if(value.length > 0){
+      $("#searchclear").addClass("important");
+      if (e.keyCode == 13) {
+        var value = $(this).val();
+        value = value.replace(" ", "+");
+        console.log(value)
+        $('#form').submit();
+        wikiSearch(value);
+      }
+    }  
    });
   
   // this funnction returns an array using the wiki API
